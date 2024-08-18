@@ -14,7 +14,7 @@ function App() {
         try {
           const responseip = await fetch(`https://ipinfo.io/${ipadd}?token=0d478690783a53`);
           const dataip = await responseip.json();
-          console.log(dataip);
+          
           setdataip(dataip);
         } catch (err) {
           console.log("Error", err);
